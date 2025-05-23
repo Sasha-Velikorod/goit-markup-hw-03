@@ -26,6 +26,9 @@ h5,
 p {
   margin: 0;
 }
+img {
+  display: block;
+}
 .container {
   max-width: 1158px;
   padding-left: 15px;
@@ -60,7 +63,7 @@ body {
 .page-header {
 }
 .page-header .container {
-  border-bottom: 1px solid var(--cornflower);
+  border-bottom: 1px solid #e7e9fc;
   height: 72px;
   display: flex;
   justify-content: space-between;
@@ -81,6 +84,7 @@ body {
   padding-right: auto;
   padding-top: 24px;
   padding-bottom: 24px;
+  margin-right: 76px;
 }
 .page-header-logo > .page-header-logo-span {
   color: #2e2f42;
@@ -102,6 +106,7 @@ body {
   margin-left: 76px;
   padding-top: 24px;
   padding-bottom: 24px;
+  padding: 24px 0;
 }
 .page-header-list :hover,
 .page-header-list :focus,
@@ -142,6 +147,7 @@ body {
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -156,6 +162,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+  max-width: 496px;
 }
 .hero-button {
   background-color: #4d5ae5;
@@ -170,6 +177,8 @@ body {
   padding: 16px 32px;
   margin: auto;
   border: none;
+  display: block;
+  min-width: 169px;
 }
 
 .hero-button:hover,
@@ -179,6 +188,9 @@ body {
 
 /* INFO */
 
+.info {
+  padding: 120px 0;
+}
 .page-info-list {
   display: flex;
   align-items: center;
@@ -187,8 +199,10 @@ body {
   padding-bottom: 120px;
   padding-left: 15px;
   padding-right: 15px;
-
-  gap: 8px;
+  gap: 24px; 
+}
+.page-info-list:first-child {
+  width: calc((100% - 72px) / 4); 
 }
 .title-info {
   font-weight: 700;
@@ -210,6 +224,10 @@ body {
 
 /* TEAM */
 
+.page-our-team {
+  padding: 120px 0;
+
+}
 .page-our-team {
   background: #f4f4fd;
   height: 732px;
@@ -268,6 +286,7 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 8px;
 }
 .portfolio-list {
   display: flex;
@@ -316,6 +335,9 @@ body {
 
 /* FOOTER */
 
+.page-footer {
+  margin-bottom: 8px;
+}
 .page-footer .container {
   min-width: 1440px;
   background-color: #2e2f42;
@@ -335,6 +357,7 @@ body {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-bottom: 16px;
+   display: inline-block;
 }
 .page-footer-logo > .page-footer-logo-span {
   color: #f4f4fd;
